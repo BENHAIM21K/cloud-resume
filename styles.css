@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.download-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.download-link a {
+    text-decoration: none;
+    color: #fff;
+    background: #009688;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.download-link a:hover {
+    background: #00796b;
+}
+
+section {
+    margin: 20px 0;
+}
+
+section h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #009688;
+    padding-bottom: 10px;
+    color: #009688;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+a {
+    color: #009688;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
