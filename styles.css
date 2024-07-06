@@ -28,21 +28,17 @@ header h1 {
 
 .download-link {
     position: absolute;
-    top: 20px;
+    bottom:  25px;
     right: 20px;
 }
 
 .download-link a {
     text-decoration: none;
-    color: #fff;
-    background: #009688;
+    color: #009688;
     padding: 10px 20px;
     border-radius: 5px;
 }
 
-.download-link a:hover {
-    background: #00796b;
-}
 
 section {
     margin: 20px 0;
