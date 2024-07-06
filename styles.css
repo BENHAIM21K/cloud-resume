@@ -34,7 +34,7 @@ header h1 {
 
 .download-link a {
     text-decoration: none;
-    color: #009688;
+    color: #070a0f;
     padding: 10px 20px;
     border-radius: 5px;
 }
@@ -46,9 +46,9 @@ section {
 
 section h2 {
     margin-top: 0;
-    border-bottom: 2px solid #009688;
+    border-bottom: 2px solid #174aaa;
     padding-bottom: 10px;
-    color: #009688;
+    color: #174aaa;
 }
 
 ul {
@@ -61,7 +61,7 @@ ul li {
 }
 
 a {
-    color: #009688;
+    color: #174aaa;
     text-decoration: none;
 }
 
