@@ -68,3 +68,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px; /* Add some margin if needed */
+}
+
+.profile-pic {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff; /* Optional: Add a border around the image */
+}
