@@ -18,22 +18,57 @@ body {
 
 .profile-container {
     position: absolute;
-    top: 20px; /* Ensure there's some spacing from the top */
-    left: 20px; /* Ensure there's some spacing from the left */
+    top: 20px;
+    left: 20px;
 }
 
 .profile-pic {
-    width: 100px; /* Adjust size as needed */
-    height: 100px;
+    width: 120px; /* Default size */
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #fff; /* Optional: Add a border around the image */
+    border: 2px solid #fff;
+}
+
+/* For phones and small devices */
+@media only screen and (max-width: 600px) {
+    .profile-pic {
+        width: 70px; /* Smaller size for phones */
+        height: 70px;
+    }
+
+    header {
+        padding-top: 90px; /* Adjust to prevent overlap */
+    }
+}
+
+/* For tablets and medium devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .profile-pic {
+        width: 90px; /* Medium size for tablets */
+        height: 90px;
+    }
+
+    header {
+        padding-top: 110px; /* Adjust to prevent overlap */
+    }
+}
+
+/* For large screens like PCs */
+@media only screen and (min-width: 1025px) {
+    .profile-pic {
+        width: 150px; /* Larger size for PCs */
+        height: 150px;
+    }
+
+    header {
+        padding-top: 160px; /* Adjust to prevent overlap */
+    }
 }
 
 header {
     text-align: center;
     padding-bottom: 20px;
-    padding-top: 140px; /* Ensure content doesn't overlap with the image */
     border-bottom: 1px solid #ccc;
 }
 
