@@ -109,6 +109,27 @@
             </a>
         </div>
     </div>
+    <script>
+        document.getElementById('downloadCVButton').addEventListener('click', function(event) {
+            // Prevent default download action to ensure API call happens first
+            event.preventDefault();
+            
+            // Make a POST request to the API Gateway
+            fetch('https://hvhaprnr6d.execute-api.il-central-1.amazonaws.com/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // After recording the download, proceed with the download
+                window.location.href = 'benhaimresume.pdf';
+            })
+            .catch((error) => console.error('Error:', error));
+        });
+    </script>
 </body>
 </html>
 
