@@ -115,7 +115,7 @@
             event.preventDefault();
             
             // Make a POST request to the API Gateway
-            fetch('arn:aws:execute-api:il-central-1:381492296048:m3x51n8acf/*/POST/cvDownloadEmail', {
+            fetch('https://m3x51n8acf.execute-api.il-central-1.amazonaws.com/prod', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
