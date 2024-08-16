@@ -8,8 +8,8 @@ The Cloud Resume Project is a cloud-based deployment of my personal resume websi
 
 ## Architecture
 
-![Architecture Diagram](path/to/your/architecture-diagram.png)  
-*(Replace the path with the actual path to your architecture diagram in the repository)*
+![Architecture Diagram](https://github.com/BENHAIM21K/cloud-resume/blob/main/Documentation/ProjectArchitechture.drawio.png)  
+
 
 ## Components
 
