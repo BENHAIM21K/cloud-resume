@@ -64,9 +64,9 @@ header h1, header h2, header h3 {
 }
 
 .download-link {
-    position: absolute;
+    position:fixed;
     top:  100px;
-    right: 20px;
+    right: 150px;
 }
 
 
