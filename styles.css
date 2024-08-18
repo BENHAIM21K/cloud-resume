@@ -64,9 +64,9 @@ header h1, header h2, header h3 {
 }
 
 .download-link {
-    position:   absolute;
-    top:  100px;
-    right: 10px;
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    margin: 0px 0; /* Adds some vertical spacing */
 }
 
 
