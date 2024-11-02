@@ -20,19 +20,24 @@ body {
     position: relative;
 }
 
-.profile-container {
-    text-align: center;
-    margin-bottom: 20px; /* Add space below the image */
-}
-
 .profile-pic {
     width: 120px; /* Default size */
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #fff;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
+.profile-pic:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+
+.profile-pic:active {
+    transform: scale(1.05); /* Slightly reduce size on click */
+}
 /* For phones and small devices */
 @media only screen and (max-width: 600px) {
     .profile-pic {
