@@ -9,6 +9,10 @@ body {
     background: linear-gradient(135deg, #c9e6f8, #c9e6f8);
     color: #333;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .container {
     width: 80%;
