@@ -218,11 +218,28 @@
     <script>
         const toggleBtn = document.getElementById('menuToggle');
         const sideMenu = document.getElementById('sideMenu');
+        const menuList = document.getElementById('menuList');
 
-        toggleBtn.addEventListener('click', () => {
+        toggleBtn.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent click from bubbling
             sideMenu.classList.toggle('show');
         });
+
+        // Close menu if clicking anywhere outside of it
+        document.addEventListener('click', (event) => {
+            if (!sideMenu.contains(event.target)) {
+            sideMenu.classList.remove('show');
+            }
+        });
+
+        // Optional: also collapse menu when any link is clicked
+        document.querySelectorAll('#menuList a').forEach(link => {
+            link.addEventListener('click', () => {
+            sideMenu.classList.remove('show');
+            });
+        });
     </script>
+
 
 </body>
 </html>
