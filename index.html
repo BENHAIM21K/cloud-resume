@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <nav class="side-menu" id="sideMenu">
+        <button id="menuToggle" class="menu-toggle">&#9776;</button>
+        <ul id="menuList">
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#honors">Honors</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <header class="profile-container">
             <img src="Images/ProfilePIC.jpg" alt="My Picture" class="profile-pic" />
@@ -22,18 +37,34 @@
                 <h2><i class="fas fa-download"></i> <strong>Download CV</strong></h2>
             </a>
         </div>
+        <nav class="side-menu">
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#honors">Honors</a></li>
+            <li><a href="#volunteering">Volunteering</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#languages">Languages</a></li>
+        </ul>
+        </nav>
+
         
-        <section class="summary">
+        <section class="summary" id="summary">
             <h2>Summary</h2>
-            <p>● Aspiring Cloud Engineer with a robust background in <strong>network administration</strong> and <strong>system implementation</strong>, developed through hands-on roles in the <strong>IDF</strong> and at <strong>MER Group</strong>.</p>
-            <p>● Proficient in cloud technologies, including <strong>Python</strong>, <strong>AWS</strong>, and <strong>CloudFormation</strong>, with a strong commitment to continuous learning and applying best practices in <strong>cloud infrastructure</strong> and <strong>automation</strong>.</p>
-            <p>● Certified <strong>Solutions Architect Associate</strong>, currently continuing advanced studies to further strengthen my AWS cloud architecture expertise.</p>
-            <p>● Adept at <strong>troubleshooting</strong>, <strong>collaborating</strong> with technical teams, and ensuring seamless integration and performance in dynamic environments.</p>
-            <p>● Driven by a passion for cloud technologies and a dedication to advancing in the field of cloud engineering, with a focus on delivering <strong>technical excellence</strong> and <strong>customer success</strong>.</p>
-            <p>● Honored with the <strong>ICT Division Commander Certificate of Honor</strong>, for exhibiting outstanding <strong>leadership</strong> skills and serving as a positive mentor to fellow soldiers.</p>
-        
+            <p>● 4 years of experience as a <strong>Network Administrator</strong> and <strong>System Implementer</strong>.</p>
+            <p>● Skilled in designing, implementing, and optimizing <strong>CI/CD pipelines</strong>.</p>
+            <p>● Experienced in developing and maintaining <strong>Infrastructure as Code (IaC)</strong> using <strong>AWS CloudFormation</strong> for scalable automation.</p>
+            <p>● Deep knowledge of core <strong>AWS services</strong> including <strong>EC2</strong>, <strong>S3</strong>, <strong>VPC</strong>, and <strong>IAM</strong>.</p>
+            <p>● Hands-on with <strong>Docker containerization</strong> and a solid understanding of <strong>networking protocols</strong> and <strong>cloud security</strong>.</p>
+            <p>● Lead <strong>customer engagements</strong> to drive <strong>cloud adoption</strong> and optimize <strong>workloads</strong>.</p>
+            <p>● Author <strong>technical documentation</strong>, <strong>tutorials</strong>, and <strong>educational content</strong> for both technical teams and end users.</p>
+            <p>● Strong <strong>troubleshooting</strong> skills and ability to deliver solutions that improve <strong>system reliability</strong> and <strong>user experience</strong>.</p>   
         </section>
-        <section class="experience">
+
+        <section class="experience" id="experience">
             <h2>Experience</h2>
             <h3>MER Group</h3>
             <p>2023 - 2024 <strong>System Implementor </strong></p>
@@ -53,7 +84,7 @@
                 <li>● Successfully completed diversified professional training encompassing data communication, <strong>Excel proficiency</strong>, and expertise in various military systems.</li>
             </ul>
         </section>
-        <section class="education">
+        <section class="education" id="education">
             <h2>Education</h2>
             <h3><strong>Bar-Ilan University</strong></h3>
             <p>2024 - 2025 <strong>DevSecOps</strong></p>
@@ -65,22 +96,41 @@
             <h3><strong>iNT college - Institute of Innovation & Technology</strong></h3>
             <p>2022 - 2023 <strong><a href="Images/PythonINT.jpeg" target="_blank" style="color: inherit; text-decoration: none;">Python INT College</strong></p>
         </section>
-        <section class="certifications">
+        <section class="certifications" id="certifications">
             <h2>Certifications</h2>
-            <ul><a href="https://www.credly.com/badges/10686005-b802-465f-9060-0e3e18db8afb" target="_blank" style="color: inherit; text-decoration: none;">
-                <strong>✅ AWS Certified Solutions Architect – Associate</strong>
+            <div class="cert-item">
+                <a href="https://www.credly.com/earner/earned/badge/6fd54e4e-dc56-4594-901e-23b77b9ba94e" target="_blank">
+                    <strong>✅ AWS Certified Developer – Associate</strong>
+                </a>
+                <br />
+                <img src="Images/AWSdva.png" alt="SAA Badge" class="cert-image" />
+             </div>
+            <div class="cert-item">
+                <a href="https://www.credly.com/badges/10686005-b802-465f-9060-0e3e18db8afb" target="_blank">
+                    <strong>✅ AWS Certified Solutions Architect – Associate</strong>
+                </a>
+                <br />
+                <img src="Images/AWSsaa.png" alt="SAA Badge" class="cert-image" />
+             </div>
+            <div class="cert-item">
+                <a href="https://www.credly.com/badges/5a355276-dc61-4da6-85ab-507c947301b9/linked_in_profile" target="_blank">
+                    <strong>✅ AWS Certified Cloud Practitioner</strong>
+                </a>
+                <br />
+                <img src="Images/AWScp.png" alt="CLP Badge" class="cert-image" />
+            </div>
 
-            <ul><a href="https://www.credly.com/badges/5a355276-dc61-4da6-85ab-507c947301b9/linked_in_profile" target="_blank" style="color: inherit; text-decoration: none;">
-                <strong>✅ AWS Certified Cloud Practitioner</strong>
-        
-            </a></ul>
-            <ul><a href="https://www.credly.com/badges/d9942759-07de-4df1-bac2-a6d03d49a813" target="_blank" style="color: inherit; text-decoration: none;">
-                <strong>✅ ISC2 Certified in Cybersecurity (CC)</strong>
-            </a></ul>
+            <div class="cert-item">
+                <a href="https://www.credly.com/badges/d9942759-07de-4df1-bac2-a6d03d49a813" target="_blank">
+                    <strong>✅ ISC2 Certified in Cybersecurity (CC)</strong>
+                </a>
+                <br />
+                <img src="Images/ccISC2.png" alt="CC Badge" class="cert-image" />
+            </div>
 
             
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Projects</h2>
             <a href="https://www.linkedin.com/posts/ben-haim-_graber-activity-7281692912633995264-sDNH?utm_source=combined_share_message&utm_medium=member_desktop_web" target="_blank" style="color: inherit; text-decoration: none;">
             <h3> GrABer </h3>
@@ -108,12 +158,12 @@
                 <l>A <strong>Lambda</strong> function analyzes the frames using <strong>AWS Rekognition</strong> and sends email notifications with the analysis results.</l>
             </ul>
         </section>
-        <section class="honors">
+        <section class="honors" id="honors">
             <h2>Honors & Awards</h2>
             <a href="Images/CertificateOfHonor.jpeg" target="_blank" style="color: inherit; text-decoration: none;"><h3>Certificate of Honor - Commander of the ICT Division 🏅</a></h3>
             <p>Honored with the <strong>Division Commander Certificate Of Honor</strong> for exhibiting outstanding leadership skills and serving as a positive mentor to fellow soldiers.</p>
         </section>
-        <section class="volunteering">
+        <section class="volunteering" id="volunteering">
             <h2>Volunteering Work</h2>
             <p>2023 - 2023 <strong>Taglit - Birthright Israel ✡️</strong></p>
             <ul>
@@ -127,16 +177,21 @@
                 <li>Contributed to the overall cleanliness and organization of the shelter by maintaining a clean environment for the dogs.</li>
             </ul>
         </section>
-        <section class="skills">
-            <h2> Skills</h2>
+        <section class="skills" id="skills">
+            <h2>Skills</h2>
             <ul>
-                <p><strong>Python</strong> | <strong>AWS</strong> | <strong>CloudFormation</strong> | <strong>CI/CD</strong> | <strong>Customer Success</strong> </p>
-                <p><strong>Network Administration</strong> | <strong>Troubleshooting</strong> | <strong>Collaboration</strong> </p>
+                <li><span class="skill-title">Cloud & DevOps Tools:</span> <strong>AWS</strong> (<strong>EC2</strong>, <strong>S3</strong>, <strong>IAM</strong>, <strong>VPC</strong>, <strong>CloudFormation</strong>, <strong>Route 53</strong>, <strong>API Gateway</strong>, <strong>Lambda</strong>, <strong>SNS</strong>, <strong>CodePipeline</strong>), <strong>Terraform</strong>, <strong>Docker</strong>, <strong>Kubernetes</strong>, <strong>Jenkins</strong>, <strong>GitHub Actions</strong>, <strong>Prometheus</strong>, <strong>Grafana</strong></li>
+                <li><span class="skill-title">Programming & Scripting:</span> <strong>Python</strong>, <strong>Bash</strong></li>
+                <li><span class="skill-title">Frontend & Databases:</span> <strong>HTML</strong>, <strong>CSS</strong>, <strong>SQL</strong>, <strong>MongoDB</strong></li>
+                <li><span class="skill-title">Networking Protocols:</span> <strong>IP</strong>, <strong>ARP</strong>, <strong>DHCP</strong>, <strong>DNS</strong>, <strong>HTTP</strong>, <strong>SMTP</strong>, <strong>SSL</strong></li>
             </ul>
         </section>
-        <section class="languages">
+
+
+
+        <section class="languages" id="languages">
             <h2>Languages</h2>
-            <p><strong>Hebrew</strong> - Native | <strong>English</strong> - Fluent | <strong>Spanish</strong> - Limited</p>
+            <p><strong>Hebrew</strong> - Native | <strong>English</strong> - Fluent | <strong>Spanish</strong> - Basic</p>
         </section>
     </div>
     <script>
@@ -160,6 +215,15 @@
             .catch((error) => console.error('Error:', error));
         });
     </script>
+    <script>
+        const toggleBtn = document.getElementById('menuToggle');
+        const sideMenu = document.getElementById('sideMenu');
+
+        toggleBtn.addEventListener('click', () => {
+            sideMenu.classList.toggle('show');
+        });
+    </script>
+
 </body>
 </html>
 
